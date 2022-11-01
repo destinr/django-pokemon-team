@@ -1,0 +1,29 @@
+<!--django-pokemon-team/poke_proj/poke_app/templates/teamPage.html-->
+
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gotta catch some of em?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <!-- your HTML should go here -->
+    
+    <div id="origPoke">
+        <h2> Original Pokemon</h2>
+        <div>
+            <img src = {{origPic}}>
+        </div>
+    </div>
+    
+    
+    <div id="otherPokemon">
+        <h2>Other Pokemon</h2>
+        {% for pokemon in addlPics %}
+            <img src = {{pokemon}}>
+        {% endfor %}
+    </div>
+
+
+  </body>
